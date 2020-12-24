@@ -1,3 +1,3 @@
 # Yamdb_final
 
-!(https://github.com/actions/hello-world/workflows/Yamdb%20workflow/badge.svg)
+![Yamdb%20workflow](https://github.com/helen-spring/yamdb_final/workflows/Yamdb%20workflow/badge.svg)
