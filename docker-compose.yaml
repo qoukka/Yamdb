@@ -35,7 +35,7 @@ services:
       networks:
         - db_network
     web:
-      build: .
+      image: helenspring/yamdb:latest
       restart: always
       expose:
         - 8000
