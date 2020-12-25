@@ -6,7 +6,7 @@ from rest_framework import status, viewsets
 from rest_framework.decorators import permission_classes, api_view, action
 from rest_framework.filters import SearchFilter
 from rest_framework.generics import get_object_or_404
-from rest_framework.permissions import (AllowAny, IsAuthenticated,
+from rest_framework.permissions import (AllowAny,
                                         IsAuthenticatedOrReadOnly)
 from rest_framework.response import Response
 from rest_framework_simplejwt.views import TokenObtainPairView

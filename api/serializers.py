@@ -82,7 +82,7 @@ class ReviewSerializer(serializers.ModelSerializer):
     def check_review(self, review):
         if review:
             raise serializers.ValidationError(
-                f'You can not write second review'
+                'You can not write second review'
             )
 
 
