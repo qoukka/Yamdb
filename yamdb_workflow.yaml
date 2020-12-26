@@ -58,8 +58,9 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.PASSPHRASE }}
           script: |
-            sudo docker-compose stop
-            sudo docker-compose up -d
+            sudo docker pull helenspring/yamdb
+            sudo docker stop $(sudo docker ps -a -q)
+            sudo docker run --rm -d -p 5000:5000 helenspring/yamdb
 
   send_message:
     runs-on: ubuntu-latest
