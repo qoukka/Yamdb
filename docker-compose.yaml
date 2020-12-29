@@ -18,7 +18,7 @@
       restart: always
       volumes:
         - .:/code
-        - static_volume:/code/static/
+        - static:/code/static/
       depends_on:
         - db
       env_file:
