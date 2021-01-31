@@ -6,7 +6,7 @@
     media:
   services:
     db:
-      image: postgres:13.1-alpine
+      image: postgres:13.1
       container_name: postgres
       volumes:
         - postgres_data:/var/lib/postgresql/data/
